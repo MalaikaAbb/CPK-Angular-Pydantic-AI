@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "docsRoot": "https://docs.copilotkit.ai/angular/pydantic-ai",
+  "syncedAt": "2026-08-18T07:03:12.020Z",
+  "pages": {
+    "/angular/pydantic-ai": {
+      "file": "angular__pydantic-ai.md",
+      "sha256": "4dd85ecedec6a0afd4c25b0c7441789dbc1ef9e4d93e57a274d17c79128efa25",
+      "bytes": 6735,
+      "lines": 172,
+      "routes": [
+        "/",
+        "/doc-sync"
+      ],
+      "status": "ok",
+      "age": 0,
+      "date": "Tue, 18 Aug 2026 07:03:12 GMT"
+    },
+    "/angular/pydantic-ai/guides/a2ui": {
+      "file": "angular__pydantic-ai__guides__a2ui.md",
+      "sha256": "3e65f735453a32a9e74a8eb0d99d25b4ae0c5c2aefb2a6f5a6d697c3b4a421fb",
+      "bytes": 5853,
+      "lines": 195,
+      "routes": [
+        "/a2ui"
+      ],
+      "status": "ok",
+      "age": 0,
+      "date": "Tue, 18 Aug 2026 07:03:12 GMT"
+    },
+    "/angular/pydantic-ai/guides/chat-ui": {
+      "file": "angular__pydantic-ai__guides__chat-ui.md",
+      "sha256": "b9ce714d14e8fe52a35d017f4df7781cd35659bf6fd424a0c784c523d4967af8",
+      "bytes": 5139,
+      "lines": 178,
+      "routes": [
+        "/chat-ui"
+      ],
+      "status": "ok",
+      "age": 0,
+      "date": "Tue, 18 Aug 2026 07:03:12 GMT"
+    },
+    "/angular/pydantic-ai/guides/frontend-tools-generative-ui": {
+      "file": "angular__pydantic-ai__guides__frontend-tools-generative-ui.md",
+      "sha256": "394f2018b96102badc20bcc241786249ac8a4cc0d54800d9271f10d2923624a7",
+      "bytes": 5733,
+      "lines": 178,
+      "routes": [
+        "/frontend-tools-generative-ui"
+      ],
+      "status": "ok",
+      "age": 0,
+      "date": "Tue, 18 Aug 2026 07:03:12 GMT"
+    },
+    "/angular/pydantic-ai/guides/human-in-the-loop": {
+      "file": "angular__pydantic-ai__guides__human-in-the-loop.md",
+      "sha256": "9cfc77274f7dd65dcf2f00692eac097b1822ed2033462ff7cdd1a96eff59b4b8",
+      "bytes": 7177,
+      "lines": 227,
+      "routes": [
+        "/human-in-the-loop"
+      ],
+      "status": "ok",
+      "age": 0,
+      "date": "Tue, 18 Aug 2026 07:03:12 GMT"
+    },
+    "/angular/pydantic-ai/guides/shared-state": {
+      "file": "angular__pydantic-ai__guides__shared-state.md",
+      "sha256": "b5b0834d216d4bbd27077544f61e354c9d61abadfa6a8639dc2077aa02a7a20f",
+      "bytes": 4727,
+      "lines": 151,
+      "routes": [
+        "/shared-state"
+      ],
+      "status": "ok",
+      "age": 0,
+      "date": "Tue, 18 Aug 2026 07:03:12 GMT"
+    },
+    "/angular/pydantic-ai/guides/threads-memory-attachments-headless": {
+      "file": "angular__pydantic-ai__guides__threads-memory-attachments-headless.md",
+      "sha256": "9565a5009723622d8aae42e516f266307cc5b949357bb0342e64499812a71545",
+      "bytes": 8942,
+      "lines": 302,
+      "routes": [
+        "/threads",
+        "/memory",
+        "/attachments",
+        "/headless"
+      ],
+      "status": "ok",
+      "age": 0,
+      "date": "Tue, 18 Aug 2026 07:03:13 GMT"
+    },
+    "/angular/pydantic-ai/guides/voice-multimodal": {
+      "file": "angular__pydantic-ai__guides__voice-multimodal.md",
+      "sha256": "23003dd4fb10b88037b2aeeb7e87e79fd465e07a514f93910f39fbcb6a3bea4c",
+      "bytes": 3797,
+      "lines": 111,
+      "routes": [
+        "/voice-multimodal"
+      ],
+      "status": "ok",
+      "age": 0,
+      "date": "Tue, 18 Aug 2026 07:03:13 GMT"
+    },
+    "/angular/pydantic-ai/quickstart": {
+      "file": "angular__pydantic-ai__quickstart.md",
+      "sha256": "4dd85ecedec6a0afd4c25b0c7441789dbc1ef9e4d93e57a274d17c79128efa25",
+      "bytes": 6735,
+      "lines": 172,
+      "routes": [
+        "/quickstart"
+      ],
+      "status": "ok",
+      "age": 0,
+      "date": "Tue, 18 Aug 2026 07:03:13 GMT"
+    }
+  },
+  "sitemap": {
+    "fetchedAt": "2026-08-18T07:03:12.020Z",
+    "urlsUnderRoot": 3,
+    "knownUnmapped": [
+      "https://docs.copilotkit.ai/angular/pydantic-ai/ag-ui",
+      "https://docs.copilotkit.ai/angular/pydantic-ai/copilot-runtime"
+    ]
+  }
+}
