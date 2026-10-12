@@ -151,6 +151,17 @@ export const NAV: NavGroup[] = [
           'Reading and writing agent state through injectAgentStore, and publishing read-only app context two ways.',
         status: 'working',
       },
+      {
+        path: '/webmcp',
+        hasDemo: true,
+        title: 'WebMCP',
+        docPath: '/angular/pydantic-ai/webmcp',
+        summary:
+          'A frontend tool opted into WebMCP, so the same handler answers the CopilotKit agent and browser agents through document.modelContext.',
+        status: 'partial',
+        statusNote:
+          'The chat half runs anywhere. The WebMCP half needs Chrome 149+ with the WebMCP origin trial or chrome://flags/#enable-webmcp-testing; elsewhere CopilotKit skips registration by design.',
+      },
     ],
   },
   {
@@ -197,6 +208,22 @@ export const NAV: NavGroup[] = [
         summary:
           'A transcript and composer built from scratch on injectAgentStore and CopilotKitCore.runAgent.',
         status: 'working',
+      },
+    ],
+  },
+  {
+    title: 'Multi-agent',
+    routes: [
+      {
+        path: '/subagents',
+        hasDemo: true,
+        title: 'Sub-agents',
+        docPath: '/angular/pydantic-ai/multi-agent/subagents',
+        summary:
+          'A supervisor delegating to research, writing, and critique sub-agents, with a live delegation log driven by shared state.',
+        status: 'broken',
+        statusNote:
+          'Implemented as published and verified failing: all three sub-agents run, but no state event is ever sent, so the delegation log stays empty. pydantic-ai 2.55 only forwards state that a tool returns as an AG-UI event; the guide\'s tools only mutate ctx.deps.state. See the route page.',
       },
     ],
   },

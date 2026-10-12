@@ -8,6 +8,97 @@ Holds the 3 most recent dated entries. When a change lands on a fourth
 date, the oldest entry is dropped. Entries are counted, not aged, so a gap of
 weeks between changes does not expire anything.
 
+## 2026-10-12
+
+### 13:24 UTC — 5 pages, highest severity high
+
+**High — A2UI schemas, styling, and recovery**
+
+`/angular/pydantic-ai/guides/a2ui` · route `/a2ui` · under “Choose a schema strategy” · in a `typescript` block
+
+24 code lines, 1 heading, 19 prose lines changed. The number of fenced code blocks changed.
+
+````diff
+- // features/a2ui/a2ui-catalogs.ts
+- const fixedDefinitions = {
++ // features/a2ui/a2ui-definitions.ts
++ export const fixedDefinitions = {
+- };
++ } satisfies A2UICatalogDefinitions;
++ A catalog is required: without one, A2UI stays off even when the runtime
++ enables it, and CopilotKit logs a warning.
+````
+
+**High — Frontend tools and generative UI**
+
+`/angular/pydantic-ai/guides/frontend-tools-generative-ui` · route `/frontend-tools-generative-ui` · under “Let the agent display one of your components”
+
+36 code lines, 1 heading, 23 prose lines changed. The number of fenced code blocks changed.
+
+````diff
++ ## Let the agent display one of your components
++ 
++ The simplest generative UI there is, and the only kind that needs nothing on the
++ agent side. `registerComponent` registers a standalone component as a tool the
++ agent can call to show it. The agent decides when, and fills the props.
++ 
++ ```ts title="src/app/incident-card.component.ts"
++ import { Component, input } from "@angular/core";
+````
+
+**High — Voice and multimodal input**
+
+`/angular/pydantic-ai/guides/voice-multimodal` · route `/voice-multimodal` · under “Accept voice input”
+
+5 code lines, 1 heading, 15 prose lines changed. The number of fenced code blocks changed.
+
+````diff
+- access. Your Runtime must also have transcription configured; a visible
+- microphone does not make an unavailable transcription service succeed.
++ access.
++ 
++ ### Configure Runtime transcription
++ 
++ Follow the [Voice backend setup](/angular/pydantic-ai/guides/voice-multimodal#backend) to add a dedicated Runtime
++ route and transcription service. Keep speech-provider credentials separate
+````
+
+**Medium — Introduction**
+
+`/angular/pydantic-ai` · routes `/`, `/doc-sync` · under “Angular”
+
+1 heading, 17 prose lines changed.
+
+````diff
+- body="Add durable threads, inspection, and managed or self-hosted Enterprise Intelligence without changing the Angular frontend APIs in this guide."
++ body="Add threads, inspection, and cloud-hosted or self-hosted CopilotKit Intelligence without changing the Angular frontend APIs in this guide."
++ ## Start with your coding agent
++ 
++ Use this prompt to connect your Angular app to Copilot Runtime with the selected agent backend, then verify a working conversation. You can also follow the manual steps below.
++ 
++ Ask your coding agent to follow the setup steps on this page for your selected framework and frontend.
++ 
+````
+
+**Medium — Quickstart**
+
+`/angular/pydantic-ai/quickstart` · route `/quickstart` · under “Angular”
+
+1 heading, 17 prose lines changed.
+
+````diff
+- body="Add durable threads, inspection, and managed or self-hosted Enterprise Intelligence without changing the Angular frontend APIs in this guide."
++ body="Add threads, inspection, and cloud-hosted or self-hosted CopilotKit Intelligence without changing the Angular frontend APIs in this guide."
++ ## Start with your coding agent
++ 
++ Use this prompt to connect your Angular app to Copilot Runtime with the selected agent backend, then verify a working conversation. You can also follow the manual steps below.
++ 
++ Ask your coding agent to follow the setup steps on this page for your selected framework and frontend.
++ 
+````
+
+---
+
 ## 2026-08-21
 
 ### 17:07 UTC — 3 pages, highest severity high
@@ -62,6 +153,8 @@ weeks between changes does not expire anything.
 + 2. Send a chat message. Open **Agents**, then **AG-UI Events**. Events are moving.
 + 3. Open **Threads**. The list is unlocked (Intelligence is on), or locked with Enable Intelligence (Intelligence is off).
 ````
+
+---
 
 ---
 
