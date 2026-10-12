@@ -15,6 +15,8 @@ import { A2uiChatComponent } from '../features/a2ui/a2ui-chat.component';
 import { MediaChatComponent } from '../features/attachments/media-chat.component';
 import { ChatUiDemoComponent } from '../features/chat-ui/chat-ui-demo.component';
 import { HeadlessChatComponent } from '../features/headless/headless-chat.component';
+import { SubagentsChatComponent } from '../features/subagents/subagents-chat.component';
+import { WebmcpChatComponent } from '../features/webmcp/webmcp-chat.component';
 import { HitlChatComponent } from '../features/hitl/hitl-chat.component';
 import { MemoryDemoComponent } from '../features/memory/memory-demo.component';
 import { VoiceChatComponent } from '../features/media/voice-chat.component';
@@ -120,3 +122,21 @@ export class AttachmentsDemo {}
   ></app-demo-frame>`,
 })
 export class HeadlessDemo {}
+
+@Component({
+  selector: 'app-webmcp-demo',
+  imports: [DemoFrame, WebmcpChatComponent],
+  template: `<app-demo-frame backTo="/webmcp"
+    ><app-webmcp-chat
+  /></app-demo-frame>`,
+})
+export class WebmcpDemo {}
+
+@Component({
+  selector: 'app-subagents-demo',
+  imports: [DemoFrame, SubagentsChatComponent],
+  template: `<app-demo-frame backTo="/subagents"
+    ><app-subagents-chat
+  /></app-demo-frame>`,
+})
+export class SubagentsDemo {}

@@ -1,32 +1,32 @@
 {
   "schema": 1,
   "docsRoot": "https://docs.copilotkit.ai/angular/pydantic-ai",
-  "syncedAt": "2026-08-21T17:07:04.605Z",
+  "syncedAt": "2026-10-12T13:24:36.952Z",
   "pages": {
     "/angular/pydantic-ai": {
       "file": "angular__pydantic-ai.md",
-      "sha256": "0853cd116ac68c4609c976f2a107b63f621e4abfa81288640cb253b5551c3ea4",
-      "bytes": 7292,
-      "lines": 185,
+      "sha256": "45c501682b42184dabf135e048f902b8f85d7aae1f18b7ab4008e20faf99cce3",
+      "bytes": 7460,
+      "lines": 191,
       "routes": [
         "/",
         "/doc-sync"
       ],
       "status": "ok",
       "age": 0,
-      "date": "Fri, 21 Aug 2026 17:07:05 GMT"
+      "date": "Mon, 12 Oct 2026 13:24:37 GMT"
     },
     "/angular/pydantic-ai/guides/a2ui": {
       "file": "angular__pydantic-ai__guides__a2ui.md",
-      "sha256": "3e65f735453a32a9e74a8eb0d99d25b4ae0c5c2aefb2a6f5a6d697c3b4a421fb",
-      "bytes": 5853,
-      "lines": 195,
+      "sha256": "d13ad265738789f41b508490df99067c0f052ae094088041d4ce4beaefc6d781",
+      "bytes": 6838,
+      "lines": 219,
       "routes": [
         "/a2ui"
       ],
       "status": "ok",
       "age": 0,
-      "date": "Fri, 21 Aug 2026 17:07:05 GMT"
+      "date": "Mon, 12 Oct 2026 13:24:37 GMT"
     },
     "/angular/pydantic-ai/guides/chat-ui": {
       "file": "angular__pydantic-ai__guides__chat-ui.md",
@@ -38,19 +38,19 @@
       ],
       "status": "ok",
       "age": 0,
-      "date": "Fri, 21 Aug 2026 17:07:05 GMT"
+      "date": "Mon, 12 Oct 2026 13:24:37 GMT"
     },
     "/angular/pydantic-ai/guides/frontend-tools-generative-ui": {
       "file": "angular__pydantic-ai__guides__frontend-tools-generative-ui.md",
-      "sha256": "394f2018b96102badc20bcc241786249ac8a4cc0d54800d9271f10d2923624a7",
-      "bytes": 5733,
-      "lines": 178,
+      "sha256": "276786ecbd95b077687b1590c267c5c6c8204c18b55c201bfa2f787f918bdcdb",
+      "bytes": 7893,
+      "lines": 236,
       "routes": [
         "/frontend-tools-generative-ui"
       ],
       "status": "ok",
       "age": 0,
-      "date": "Fri, 21 Aug 2026 17:07:05 GMT"
+      "date": "Mon, 12 Oct 2026 13:24:37 GMT"
     },
     "/angular/pydantic-ai/guides/human-in-the-loop": {
       "file": "angular__pydantic-ai__guides__human-in-the-loop.md",
@@ -62,7 +62,7 @@
       ],
       "status": "ok",
       "age": 0,
-      "date": "Fri, 21 Aug 2026 17:07:05 GMT"
+      "date": "Mon, 12 Oct 2026 13:24:37 GMT"
     },
     "/angular/pydantic-ai/guides/shared-state": {
       "file": "angular__pydantic-ai__guides__shared-state.md",
@@ -74,7 +74,7 @@
       ],
       "status": "ok",
       "age": 0,
-      "date": "Fri, 21 Aug 2026 17:07:05 GMT"
+      "date": "Mon, 12 Oct 2026 13:24:37 GMT"
     },
     "/angular/pydantic-ai/guides/threads-memory-attachments-headless": {
       "file": "angular__pydantic-ai__guides__threads-memory-attachments-headless.md",
@@ -89,35 +89,35 @@
       ],
       "status": "ok",
       "age": 0,
-      "date": "Fri, 21 Aug 2026 17:07:05 GMT"
+      "date": "Mon, 12 Oct 2026 13:24:38 GMT"
     },
     "/angular/pydantic-ai/guides/voice-multimodal": {
       "file": "angular__pydantic-ai__guides__voice-multimodal.md",
-      "sha256": "23003dd4fb10b88037b2aeeb7e87e79fd465e07a514f93910f39fbcb6a3bea4c",
-      "bytes": 3797,
-      "lines": 111,
+      "sha256": "d56bd2df08927e64a8109e4fd1695d3303bfce5fa798baa3614f780cc63d811e",
+      "bytes": 4488,
+      "lines": 128,
       "routes": [
         "/voice-multimodal"
       ],
       "status": "ok",
       "age": 0,
-      "date": "Fri, 21 Aug 2026 17:07:05 GMT"
+      "date": "Mon, 12 Oct 2026 13:24:38 GMT"
     },
     "/angular/pydantic-ai/quickstart": {
       "file": "angular__pydantic-ai__quickstart.md",
-      "sha256": "0853cd116ac68c4609c976f2a107b63f621e4abfa81288640cb253b5551c3ea4",
-      "bytes": 7292,
-      "lines": 185,
+      "sha256": "45c501682b42184dabf135e048f902b8f85d7aae1f18b7ab4008e20faf99cce3",
+      "bytes": 7460,
+      "lines": 191,
       "routes": [
         "/quickstart"
       ],
       "status": "ok",
       "age": 0,
-      "date": "Fri, 21 Aug 2026 17:07:05 GMT"
+      "date": "Mon, 12 Oct 2026 13:24:37 GMT"
     }
   },
   "sitemap": {
-    "fetchedAt": "2026-08-21T17:07:04.605Z",
+    "fetchedAt": "2026-10-12T13:24:36.952Z",
     "urlsUnderRoot": 3,
     "knownUnmapped": [
       "https://docs.copilotkit.ai/angular/pydantic-ai/ag-ui",

@@ -24,12 +24,14 @@ Browser (Angular 22, zoneless)
   │  POST http://localhost:8200/api/copilotkit
   ▼
 Copilot Runtime  ·  localhost:8200        ← Node, frontend/server.ts
-  │  agents: { default, support } → new HttpAgent({ url })
+  │  agents: { default, support, subagents } → new HttpAgent({ url })
   │  a2ui: {}  → A2UIMiddleware
-  │  POST http://localhost:8000/          ← AG-UI over SSE
+  │  POST http://localhost:8000/          ← AG-UI over SSE (default, support)
+  │  POST http://localhost:8000/subagents/          (subagents)
   ▼
 Pydantic AI  ·  localhost:8000            ← Python / Starlette
   │  AGUIAdapter.dispatch_request(request, agent=agent)
+  │  mount_agent("/subagents", subagents_agent, SubagentsState)
   ▼
 OpenAI  (gpt-4.1-mini)
 ```
@@ -44,6 +46,16 @@ OpenAI  (gpt-4.1-mini)
   Pydantic AI process. `default` is what CopilotKit's prebuilt components use with
   no configuration; `support` exists so the Chat UI and Threads guides' snippets —
   written as `agentId="support"` — run exactly as published.
+- **`/subagents` is verified broken.** The guide's tools record delegations by
+  mutating `ctx.deps.state`, but `pydantic-ai-slim` 2.55.0 never sends that
+  state back: its AG-UI adapter forwards state only when a tool returns an AG-UI
+  event such as `StateSnapshotEvent`. All three sub-agents run, the log stays
+  empty. The code is kept as published.
+- **`subagents` is a different agent.** The Sub-agents guide defines its own
+  supervisor (`gpt-5-mini`, three delegation tools, `SubagentsState`).
+  `backend/main.py` mounts it at `POST /subagents/` with the showcase's
+  `mount_agent`, and `server.ts` registers it under the key `subagents` — the id
+  the Angular Showcase uses for this demo.
 - **The model key never reaches the browser**, and never reaches the runtime
   either. Only the Python process holds it.
 
@@ -298,7 +310,9 @@ pydantic-ai/
 │
 └── backend/                   # Python agent — Pydantic AI over AG-UI  → :8000
     ├── pyproject.toml
-    └── main.py                # ★ Agent + AGUIAdapter on POST /
+    ├── main.py                # ★ Agent + AGUIAdapter on POST /, supervisor on /subagents/
+    └── agents/
+        └── subagents.py       # Sub-agents guide: supervisor + 3 sub-agents
 ```
 
 Routes with a live feature are split in two: `<route>` holds the notes, pass/fail
